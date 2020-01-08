@@ -1055,7 +1055,7 @@ def endMessage(port):  # Message when HiddenEye exit
     choice = input(
         "\n\n{0}[{1}?{0}] Re-run(r) : Exit(x) : Send Email(M) : SelectServer(S)\n\n >> {2}".format(MAIN0, MAIN4, MAIN2)).upper()
     if choice == 'R' or choice == 'r':
-        system('sudo python HiddenEye.py')
+        system('python HiddenEye.py')
     elif choice == 'M' or choice == 'm':
         emailPrompt3(port)
     elif choice == 'S' or choice == 's':
